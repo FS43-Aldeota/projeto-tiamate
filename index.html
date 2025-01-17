@@ -42,8 +42,18 @@
   </header>
 
   <main>
-    <section id="banner">
-
+    <!-- <section id="banner" class="relative">
+      <img src="" alt="" class="w-full h-[500px] bg-marrom_black_02">
+      <div class="absolute top-[110px] left-[135px]">
+        <h2 class="text-marrom_white_01 text-[55px] font-bold leading-[65px]"><span class="text-[#F7AE1A]">Um café quentinho</span><br> aqui na Tiamate<br>
+          muda o dia.</h2>
+          <div class="flex gap-4">
+            <a href="" class="w-[34px] h-[34px] bg-black block rounded-full"></a>
+            <a href="" class="w-[34px] h-[34px] bg-black block rounded-full"></a>
+            <a href="" class="w-[34px] h-[34px] bg-black block rounded-full"></a>
+            <a href="" class="w-[34px] h-[34px] bg-black block rounded-full"></a>
+          </div>
+      </div>
     </section>
     <section id="bem-vindo">
 
@@ -73,9 +83,9 @@
     </section>
     <section id="cardapio" class="h-screen bg-marrom_white_01">
 
-    </section>
+    </section> -->
     <section id="contato" class="flex">
-      <div class="flex-1 bg-marrom_black_02 pl-[135px] pt-[70px] pr-[70px]">
+      <div class="flex-1 bg-marrom_black_02 p-4 md:pl-[135px] md:pt-[70px] md:pr-[70px]">
         <h6 class="text-marrom_white_03 text-[18px]">Entre em contato</h6>
         <h2 class="text-marrom_white_01 text-[50px] font-bold mb-[20px]">Abra sua Franquia</h2>
         <p class="text-marrom_white_03">Preencha o formulário abaixo que entraremos em contato com você o mais rápido
@@ -85,28 +95,29 @@
             <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
               <img src="imgs/form-icon-1.png" alt="nome">
             </div>
-            <input type="text" placeholder="Nome e Sobrenome" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+            <input type="text" placeholder="Nome e Sobrenome"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
           </div>
           <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
             <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
               <img src="imgs/form-icon-2.png" alt="nome">
             </div>
-            <input type="email" placeholder="email@exemplo.com" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+            <input type="email" placeholder="email@exemplo.com"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
           </div>
           <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
             <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
               <img src="imgs/form-icon-3.png" alt="nome">
             </div>
-            <input id="telefone" type="text" placeholder="(00) 00000-0000" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+            <input id="telefone" type="text" placeholder="(00) 00000-0000"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
           </div>
           <div class="flex gap-[10px]">
             <div class="flex-1 bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
               <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
                 <img src="imgs/form-icon-4.png" alt="nome">
               </div>
-              <select 
-                id="lista_estados" 
-                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+              <select id="lista_estados" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
                 onchange="carregarCidades()">
                 <option disabled selected>UF</option>
               </select>
@@ -118,10 +129,7 @@
               <!-- <select id="lista_cidades" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
                 <option disabled selected>Cidade</option>
               </select> -->
-              <input 
-                list="lista_cidades"
-                type="text" 
-                placeholder="Cidade" 
+              <input list="lista_cidades" type="text" placeholder="Cidade"
                 class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
               <datalist id="lista_cidades"></datalist>
             </div>
@@ -139,20 +147,143 @@
               <option>Outros</option>
             </select>
           </div>
-          <button class="w-full bg-marrom_white_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold">Enviar Cadastro</button>
+          <button
+            class="w-full bg-marrom_white_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold">Enviar
+            Cadastro</button>
         </form>
       </div>
-      <img src="imgs/contato-bg.png" alt="fachada tiamate">
+      <img src="imgs/contato-bg.png" alt="fachada tiamate" class="hidden md:block">
     </section>
-    <section id="depoimentos">
-
+    <section id="depoimentos" class="pt-[130px] pb-[132px]">
+      <h6 class="text-marrom_black_01 text-[18px] text-center">Depoimentos</h6>
+      <h2 class="text-marrom_medium_01 text-[50px] font-bold text-center mb-[40px]">Tudo sobre Tiamate Coffee</h2>
+      <div class="relative">
+        <img src="imgs/depoimentos-bg.png" alt="atendente entregando café">
+        <div class="w-9/12 absolute top-1/2 right-0 -translate-y-1/2 overflow-hidden">
+          <div id="cards" class="w-[2610px] flex gap-[42px] relative left-0 duration-200">
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+            <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-marrom_white_00 rounded-[7px]">
+              <div class="flex gap-1 mb-[15px]">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+                <img src="imgs/star.png" alt="">
+              </div>
+              <p class="text-marrom_black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+                queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+                café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+                com um café gelado deles ou tomar um café da manhã por lá.</p>
+              <div class="flex gap-4 items-center mt-3">
+                <img src="imgs/cliente-1.png" alt="Kalil Sousa">
+                <h6 class="text-marrom_medium_02 font-semibold">Kalil Sousa</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end gap-4 pr-[135px]">
+        <div id="anterior"
+          class="w-[50px] h-[50px] bg-marrom_white_03 hover:bg-marrom_black_02 text-marrom_black_01 flex justify-center items-center rounded-full">
+          A</div>
+        <div 
+          id="proximo"
+          onclick="proximoDepoimento()"
+          class="w-[50px] h-[50px] bg-marrom_white_03 hover:bg-marrom_black_02 text-marrom_black_01 flex justify-center items-center rounded-full">
+          P</div>
+      </div>
     </section>
     <footer>
 
     </footer>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script>
     // Mascara do telefone, pra forçar a digitação correta
@@ -161,23 +292,31 @@
     // Requisição para buscar os estados
 
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
-    .then(res => res.json())
-    .then(estados => {
+      .then(res => res.json())
+      .then(estados => {
         estados.map(estado => {
           lista_estados.innerHTML += `<option value="${estado.id}">${estado.nome}</option>`
         })
-    })
+      })
 
-    function carregarCidades(){
+    function carregarCidades() {
       fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${lista_estados.value}/municipios?orderBy=nome`)
-    .then(res => res.json())
-    .then(cidades => {
-        lista_cidades.innerHTML = '';
-        lista_cidades.innerHTML += '<option disabled selected>Cidade</option>';
-        cidades.map(cidade => {
-          lista_cidades.innerHTML += `<option>${cidade.nome}</option>`
+        .then(res => res.json())
+        .then(cidades => {
+          lista_cidades.innerHTML = '';
+          lista_cidades.innerHTML += '<option disabled selected>Cidade</option>';
+          cidades.map(cidade => {
+            lista_cidades.innerHTML += `<option>${cidade.nome}</option>`
+          })
         })
-    })
+    }
+
+    let prox = 1;
+    function proximoDepoimento(){
+      cards.style.left = `-${prox * 400}px`;
+      if(prox < 4){
+        prox++;
+      }
     }
 
   </script>
