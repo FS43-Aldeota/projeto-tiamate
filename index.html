@@ -1,75 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiamate Coffee</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              marrom_black_01: "#292625",
-              marrom_black_02: "#3B2416",
-              marrom_medium_01: "#A97744",
-              marrom_medium_02: "#64221D",
-              marrom_white_01: "#F5E7DA",
-              marrom_white_00: "#E7E1DF",
-              marrom_white_02: "#C7794A",
-              marrom_white_03: "#CF9A5A",
-              bright_color: "#FDF5E3",
-            },
-          },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiamate Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marrom_black_01: "#292625",
+            marrom_black_02: "#3B2416",
+            marrom_medium_01: "#A97744",
+            marrom_medium_02: "#64221D",
+            marrom_white_01: "#F5E7DA",
+            marrom_white_00: "#E7E1DF",
+            marrom_white_02: "#C7794A",
+            marrom_white_03: "#CF9A5A",
+            bright_color: "#FDF5E3",
+          }
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+  <style>
+    * {
+      font-family: "Archivo", serif;
+    }
+  </style>
+</head>
 
-  <body>
-    <header>
+<body>
+  <header>
 
-    </header>
+  </header>
 
-    <main>
-        <section id="banner">
+  <main>
+    <section id="banner">
 
-        </section>
-        <section id="bem-vindo">
+    </section>
+    <section id="bem-vindo">
 
-        </section>
-        <section id="cultura">
+    </section>
+    <section id="cultura">
 
-        </section>
-        <section id="video">
-          <iframe class="w-full h-[500px]" src="https://www.youtube.com/embed/RWCP7z8ufiA?si=R2A3M313wkQaDSq_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <section id="banner2">
+    </section>
+    <section id="video">
+      <iframe class="w-full h-[500px]" src="https://www.youtube.com/embed/RWCP7z8ufiA?si=R2A3M313wkQaDSq_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="banner2">
 
-        </section>
-        <section id="instagram" class="px-[135px] py-[100px] relative">
-            <div class="grid grid-cols-3 gap-3 *:h-[300px] *:bg-black">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+    </section>
+    <section id="instagram" class="px-[135px] py-[100px] relative">
+      <div class="grid grid-cols-3 gap-3 *:h-[300px] *:bg-black">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="w-full h-[200px] bg-marrom_white_01 absolute bottom-0 left-0 -z-10"></div>
+    </section>
+    <section id="cardapio" class="h-screen bg-marrom_white_01">
+
+    </section>
+    <section id="contato" class="flex">
+      <div class="flex-1 bg-marrom_black_02 pl-[135px] pt-[70px] pr-[70px]">
+        <h6 class="text-marrom_white_03 text-[18px]">Entre em contato</h6>
+        <h2 class="text-marrom_white_01 text-[50px] font-bold mb-[20px]">Abra sua Franquia</h2>
+        <p class="text-marrom_white_03">Preencha o formulário abaixo que entraremos em contato com você o mais rápido
+          possível.</p>
+        <form class="mt-[20px]">
+          <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="imgs/form-icon-1.png" alt="nome">
             </div>
-            <div class="w-full h-[200px] bg-marrom_white_01 absolute bottom-0 left-0 -z-10"></div>
-        </section>
-        <section id="cardapio" class="h-screen bg-marrom_white_01">
+            <input type="text" placeholder="Nome e Sobrenome" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="imgs/form-icon-2.png" alt="nome">
+            </div>
+            <input type="email" placeholder="email@exemplo.com" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="imgs/form-icon-3.png" alt="nome">
+            </div>
+            <input id="telefone" type="text" placeholder="(00) 00000-0000" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="flex gap-[10px]">
+            <div class="flex-1 bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+              <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+                <img src="imgs/form-icon-4.png" alt="nome">
+              </div>
+              <select 
+                id="lista_estados" 
+                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+                onchange="carregarCidades()">
+                <option disabled selected>UF</option>
+              </select>
+            </div>
+            <div class="flex-1 bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+              <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+                <img src="imgs/form-icon-5.png" alt="nome">
+              </div>
+              <!-- <select id="lista_cidades" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+                <option disabled selected>Cidade</option>
+              </select> -->
+              <input 
+                list="lista_cidades"
+                type="text" 
+                placeholder="Cidade" 
+                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+              <datalist id="lista_cidades"></datalist>
+            </div>
+          </div>
+          <div class="bg-marrom_white_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-marrom_white_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="imgs/form-icon-6.png" alt="nome">
+            </div>
+            <select class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+              <option disabled selected>Como conheceu a Tiamate?</option>
+              <option>Facebook</option>
+              <option>Instagram</option>
+              <option>Linkedin</option>
+              <option>Google</option>
+              <option>Outros</option>
+            </select>
+          </div>
+          <button class="w-full bg-marrom_white_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold">Enviar Cadastro</button>
+        </form>
+      </div>
+      <img src="imgs/contato-bg.png" alt="fachada tiamate">
+    </section>
+    <section id="depoimentos">
 
-        </section>
-        <section id="contato">
+    </section>
+    <footer>
 
-        </section>
-        <section id="depoimentos">
+    </footer>
+  </main>
 
-        </section>
-        <footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script>
+    // Mascara do telefone, pra forçar a digitação correta
+    $('#telefone').mask('(00) 00000-0000');
 
-        </footer>
-    </main>
-  </body>
+    // Requisição para buscar os estados
+
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
+    .then(res => res.json())
+    .then(estados => {
+        estados.map(estado => {
+          lista_estados.innerHTML += `<option value="${estado.id}">${estado.nome}</option>`
+        })
+    })
+
+    function carregarCidades(){
+      fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${lista_estados.value}/municipios?orderBy=nome`)
+    .then(res => res.json())
+    .then(cidades => {
+        lista_cidades.innerHTML = '';
+        lista_cidades.innerHTML += '<option disabled selected>Cidade</option>';
+        cidades.map(cidade => {
+          lista_cidades.innerHTML += `<option>${cidade.nome}</option>`
+        })
+    })
+    }
+
+  </script>
+</body>
+
 </html>
